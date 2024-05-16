@@ -7,29 +7,29 @@ WINDOW = pg.display.set_mode((WIDTH,HEIGHT))
 pg.display.set_caption("Crazy Monkey")
 
 pg.font.init()
-BACKGROUND = pg.image.load("Backgrounds.jpg").convert_alpha()
-MONKEY = pg.image.load("monkey.png").convert_alpha()
-LION = pg.image.load("lion.png").convert_alpha()
-START = pg.image.load("start.png").convert_alpha()
-EXIT = pg.image.load("arrow.png").convert_alpha()
-HELP_B = pg.image.load("question-mark.png").convert_alpha()
-Up_Button= pg.image.load("up-arrow.png").convert_alpha()
-Left_Button = pg.image.load("left.png").convert_alpha()
-Right_Button = pg.image.load("right-arrow.png").convert_alpha()
-BACKGROUND2 = pg.image.load("Green.jpg").convert_alpha()
-LOGO = pg.image.load("crazy_monkey_logo.png").convert_alpha()
-PAUSE_BUTTON = pg.image.load("pause-button.png").convert_alpha()
+BACKGROUND = pg.image.load("./Images/Backgrounds.jpg").convert_alpha()
+MONKEY = pg.image.load("./Images/monkey.png").convert_alpha()
+LION = pg.image.load("./Images/lion.png").convert_alpha()
+START = pg.image.load("./Images/start.png").convert_alpha()
+EXIT = pg.image.load("./Images/arrow.png").convert_alpha()
+HELP_B = pg.image.load("./Images/question-mark.png").convert_alpha()
+Up_Button= pg.image.load("./Images/up-arrow.png").convert_alpha()
+Left_Button = pg.image.load("./Images/left.png").convert_alpha()
+Right_Button = pg.image.load("./Images/right-arrow.png").convert_alpha()
+BACKGROUND2 = pg.image.load("./Images/Green.jpg").convert_alpha()
+LOGO = pg.image.load("./Images/crazy_monkey_logo.png").convert_alpha()
+PAUSE_BUTTON = pg.image.load("./Images/pause-button.png").convert_alpha()
 
 
 # Fruit transform and stable location
 
-BANANA = pg.image.load("banana.png").convert_alpha()
+BANANA = pg.image.load("./Images/banana.png").convert_alpha()
 imagesize = (80, 80)
 BANANA = pg.transform.scale(BANANA, imagesize)
 BANANAlocation = [200, 400 , 80, 80]
 banana_rect=BANANA.get_rect()
 
-APPLE = pg.image.load("apple.png").convert_alpha()
+APPLE = pg.image.load("./Images/apple.png").convert_alpha()
 imagesize2 = (50, 50)
 APPLE = pg.transform.scale(APPLE, imagesize2)
 APPLElocation = [100, 218, 50, 50]
